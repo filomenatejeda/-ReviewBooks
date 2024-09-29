@@ -1,9 +1,3 @@
-//import Toogle from '../components/Toogle.js';
-//import Gallery from '../components/Gallery.js';
-// import AnotherToogle from './components/AnotherToogle';
-//import Parent from '../components/Parent.js';
-//import AnotherParent from '../components/AnotherParent.js';
-//import ToDoList from '../components/ToDoList.js';
 import NameFilter from '../components/EjemploFilter.js';
 import Footer from '../components/Footer.js';
 
@@ -27,12 +21,6 @@ export default function Home() {
           Opiniones para los Amantes de los Libros"
           </p>
         </div>
-        {/*<Toogle />*/} {/* Boton de aparecer y desaparecer cosas */}
-        {/*<Gallery />*/}
-        {/* <AnotherToogle /> */}
-        {/*<Parent />*/}
-        {/*<AnotherParent />*/}
-        {/*<ToDoList />*/}
         <NameFilter />
         <Footer /> {/* Añade el footer aquí */}
       </div>
