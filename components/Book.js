@@ -5,6 +5,7 @@ import Link from 'next/link'; // Asegúrate de importar Link de next/router
 import StarRating from './StarRating'; // Asegúrate de que este componente exista
 import books from './BookData'; // Importa los datos de los libros
 
+
 const Book = ({ book }) => {
   return (
     <div className="border p-5 mb-4 w-full flex flex-row items-start bg-white shadow"> {/* Añadido bg-white y shadow */}
