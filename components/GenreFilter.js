@@ -1,23 +1,28 @@
-// components/GenreFilter.js
+// Componente funcional que permite filtrar libros por género
 const GenreFilter = ({ genresList, selectedGenres, handleGenreChange }) => {
     return (
+      // Contenedor principal del filtro con estilo
       <div className="bg-black p-4 mb-4" style={{ backgroundColor: '#dbb377' }}>
         <div className="flex flex-wrap justify-start ml-4">
+          {/* Itera sobre la lista de géneros para crear un checkbox para cada uno */}
           {genresList.map((genre) => (
+            // Etiqueta para cada checkbox, clave única basada en el género
             <label key={genre} className="m-2 text-black">
               <input
-                type="checkbox"
-                checked={selectedGenres.includes(genre)}
-                onChange={() => handleGenreChange(genre)}
-                className="mr-2"
+                type="checkbox" // Tipo de entrada checkbox
+                checked={selectedGenres.includes(genre)} // Verifica si el género está seleccionado
+                onChange={() => handleGenreChange(genre)} // Llama a la función para manejar el cambio
+                className="mr-2" // Margen a la derecha para separación
               />
-              {genre}
+              {genre} {/* Nombre del género */}
             </label>
           ))}
         </div>
       </div>
     );
-  };
-  
-  export default GenreFilter;
+};
+
+// Exporta el componente para su uso en otras partes de la aplicación
+export default GenreFilter;
+
   
