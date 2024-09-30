@@ -43,7 +43,7 @@ const BookSynopsis = () => {
 
       {/* Reseña del libro */}
       <div className="mt-4 items-center"> {/* Añadido flex para centrar */}
-  <p className="mt-2 text-gray-700 mb-4">{book.genres}</p> {/* Géneros del libro */}
+  <p className="mt-2 text-gray-700 mb-4 text-center">Géneros: {book.genres}</p> {/* Géneros del libro */}
   </div>
   <div className="mt-4 flex flex-col items-center"> {/* Añadido flex para centrar */}
   <div className="mb-10 w-[1000px] h-[350px] p-3  rounded bg-white shadow-md"> {/* Cuadrado con fondo y sombra */}
