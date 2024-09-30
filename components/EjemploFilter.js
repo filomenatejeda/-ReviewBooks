@@ -5,11 +5,11 @@ import Book from './Book.js'; // Importa el componente Book
 // Lista de géneros disponibles para los checkboxes
 const genresList = [
   'Fiction',
-  'Ciencia Ficción',
+  'Science Fiction',
   'Fantasy',
   'Romance',
   'Horror',
-  'Aventura'
+  'Adventure',
 ];
 
 export default function EjemploFilter() {

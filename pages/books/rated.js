@@ -11,11 +11,11 @@ const RatedBooks = () => {
   // Lista de géneros definidos manualmente
   const genresList = [
     'Fiction',
-    'Ciencia Ficción',
+    'Science Fiction',
     'Fantasy',
     'Romance',
     'Horror',
-    'Aventura'
+    'Adventure '
   ];
 
   useEffect(() => {
@@ -42,16 +42,16 @@ const RatedBooks = () => {
   return (
     <div className="m-0 p-0 min-h-screen flex flex-col bg-gray-100"> {/* Fondo gris claro */}
       {/* Barra de navegación */}
-      <nav className="mb-4 p-4 bg-gray-800 text-white shadow-md">
+      <nav className="mb-0 p-5 bg-gray-800 text-white shadow-md">
         <Link href={`/`}>
           <span className="text-blue-400 hover:underline cursor-pointer">Home</span>
         </Link>
         <span className="mx-2"> &gt; </span>
         <span className="text-gray-300">Mis Libros Calificados</span>
       </nav>
-
+    <div className='bg-yellow-50 p-10'>
       <h1 className="text-3xl font-bold mb-8 text-center mt-8">Mis Libros Calificados</h1>
-      
+      </div>
       {/* Sección de filtros con fondo gris */}
       <div className="bg-black p-4 mb-4" style={{ backgroundColor: '#dbb377' }}> {/* Fondo gris y padding */}
         {/* Checkboxes para filtrar por género */}
@@ -73,7 +73,7 @@ const RatedBooks = () => {
       <div className="flex flex-col items-center"> {/* Contenedor centralizado */}
         {filteredBooks.length > 0 ? (
           filteredBooks.map((book) => (
-            <div key={book.id} className="mb-6 w-300"> {/* Limitar el ancho */}
+            <div key={book.id} className="mb-6 w-500 h-150"> {/* Limitar el ancho */}
               <Book book={book} />
             </div>
           ))
