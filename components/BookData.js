@@ -31,6 +31,186 @@ const books = [
     author: 'Autor del Libro 3',
     genres: '' // Puedes dejarlo vacío o agregar géneros
   },
+  {
+    id: 'book4',
+    title: 'Título del Libro 3',
+    imageUrl: 'URL_DE_LA_IMAGEN_DEL_LIBRO_3',
+    date: 'fecha',
+    synopsis: 'Esta es la sinopsis del Libro 3.',
+    review: '',
+    author: 'Autor del Libro 3',
+    genres: '' // Puedes dejarlo vacío o agregar géneros
+  },
+  {
+    id: 'book5',
+    title: 'Título del Libro 3',
+    imageUrl: 'URL_DE_LA_IMAGEN_DEL_LIBRO_3',
+    date: 'fecha',
+    synopsis: 'Esta es la sinopsis del Libro 3.',
+    review: '',
+    author: 'Autor del Libro 3',
+    genres: '' // Puedes dejarlo vacío o agregar géneros
+  },
+  {
+    id: 'book6',
+    title: 'Título del Libro 3',
+    imageUrl: 'URL_DE_LA_IMAGEN_DEL_LIBRO_3',
+    date: 'fecha',
+    synopsis: 'Esta es la sinopsis del Libro 3.',
+    review: '',
+    author: 'Autor del Libro 3',
+    genres: '' // Puedes dejarlo vacío o agregar géneros
+  },
+  {
+    id: 'book7',
+    title: 'Título del Libro 3',
+    imageUrl: 'URL_DE_LA_IMAGEN_DEL_LIBRO_3',
+    date: 'fecha',
+    synopsis: 'Esta es la sinopsis del Libro 3.',
+    review: '',
+    author: 'Autor del Libro 3',
+    genres: '' // Puedes dejarlo vacío o agregar géneros
+  },
+  {
+    id: 'book8',
+    title: 'Título del Libro 3',
+    imageUrl: 'URL_DE_LA_IMAGEN_DEL_LIBRO_3',
+    date: 'fecha',
+    synopsis: 'Esta es la sinopsis del Libro 3.',
+    review: '',
+    author: 'Autor del Libro 3',
+    genres: '' // Puedes dejarlo vacío o agregar géneros
+  },
+  {
+    id: 'book9',
+    title: 'Título del Libro 3',
+    imageUrl: 'URL_DE_LA_IMAGEN_DEL_LIBRO_3',
+    date: 'fecha',
+    synopsis: 'Esta es la sinopsis del Libro 3.',
+    review: '',
+    author: 'Autor del Libro 3',
+    genres: '' // Puedes dejarlo vacío o agregar géneros
+  },
+  {
+    id: 'book10',
+    title: 'Título del Libro 3',
+    imageUrl: 'URL_DE_LA_IMAGEN_DEL_LIBRO_3',
+    date: 'fecha',
+    synopsis: 'Esta es la sinopsis del Libro 3.',
+    review: '',
+    author: 'Autor del Libro 3',
+    genres: '' // Puedes dejarlo vacío o agregar géneros
+  },
+  {
+    id: 'book11',
+    title: 'Título del Libro 3',
+    imageUrl: 'URL_DE_LA_IMAGEN_DEL_LIBRO_3',
+    date: 'fecha',
+    synopsis: 'Esta es la sinopsis del Libro 3.',
+    review: '',
+    author: 'Autor del Libro 3',
+    genres: '' // Puedes dejarlo vacío o agregar géneros
+  },
+  {
+    id: 'book12',
+    title: 'Título del Libro 3',
+    imageUrl: 'URL_DE_LA_IMAGEN_DEL_LIBRO_3',
+    date: 'fecha',
+    synopsis: 'Esta es la sinopsis del Libro 3.',
+    review: '',
+    author: 'Autor del Libro 3',
+    genres: '' // Puedes dejarlo vacío o agregar géneros
+  },
+  {
+    id: 'book13',
+    title: 'Título del Libro 3',
+    imageUrl: 'URL_DE_LA_IMAGEN_DEL_LIBRO_3',
+    date: 'fecha',
+    synopsis: 'Esta es la sinopsis del Libro 3.',
+    review: '',
+    author: 'Autor del Libro 3',
+    genres: '' // Puedes dejarlo vacío o agregar géneros
+  },
+  {
+    id: 'book14',
+    title: 'Título del Libro 3',
+    imageUrl: 'URL_DE_LA_IMAGEN_DEL_LIBRO_3',
+    date: 'fecha',
+    synopsis: 'Esta es la sinopsis del Libro 3.',
+    review: '',
+    author: 'Autor del Libro 3',
+    genres: '' // Puedes dejarlo vacío o agregar géneros
+  },
+  {
+    id: 'book15',
+    title: 'Título del Libro 3',
+    imageUrl: 'URL_DE_LA_IMAGEN_DEL_LIBRO_3',
+    date: 'fecha',
+    synopsis: 'Esta es la sinopsis del Libro 3.',
+    review: '',
+    author: 'Autor del Libro 3',
+    genres: '' // Puedes dejarlo vacío o agregar géneros
+  },
+  {
+    id: 'book16',
+    title: 'Título del Libro 3',
+    imageUrl: 'URL_DE_LA_IMAGEN_DEL_LIBRO_3',
+    date: 'fecha',
+    synopsis: 'Esta es la sinopsis del Libro 3.',
+    review: '',
+    author: 'Autor del Libro 3',
+    genres: '' // Puedes dejarlo vacío o agregar géneros
+  },
+  {
+    id: 'book17',
+    title: 'Título del Libro 3',
+    imageUrl: 'URL_DE_LA_IMAGEN_DEL_LIBRO_3',
+    date: 'fecha',
+    synopsis: 'Esta es la sinopsis del Libro 3.',
+    review: '',
+    author: 'Autor del Libro 3',
+    genres: '' // Puedes dejarlo vacío o agregar géneros
+  },
+  {
+    id: 'book18',
+    title: 'Título del Libro 3',
+    imageUrl: 'URL_DE_LA_IMAGEN_DEL_LIBRO_3',
+    date: 'fecha',
+    synopsis: 'Esta es la sinopsis del Libro 3.',
+    review: '',
+    author: 'Autor del Libro 3',
+    genres: '' // Puedes dejarlo vacío o agregar géneros
+  },
+  {
+    id: 'book19',
+    title: 'Título del Libro 3',
+    imageUrl: 'URL_DE_LA_IMAGEN_DEL_LIBRO_3',
+    date: 'fecha',
+    synopsis: 'Esta es la sinopsis del Libro 3.',
+    review: '',
+    author: 'Autor del Libro 3',
+    genres: '' // Puedes dejarlo vacío o agregar géneros
+  },
+  {
+    id: 'book20',
+    title: 'Título del Libro 3',
+    imageUrl: 'URL_DE_LA_IMAGEN_DEL_LIBRO_3',
+    date: 'fecha',
+    synopsis: 'Esta es la sinopsis del Libro 3.',
+    review: '',
+    author: 'Autor del Libro 3',
+    genres: '' // Puedes dejarlo vacío o agregar géneros
+  },
+  {
+    id: 'book21',
+    title: 'Título del Libro 3',
+    imageUrl: 'URL_DE_LA_IMAGEN_DEL_LIBRO_3',
+    date: 'fecha',
+    synopsis: 'Esta es la sinopsis del Libro 3.',
+    review: '',
+    author: 'Autor del Libro 3',
+    genres: '' // Puedes dejarlo vacío o agregar géneros
+  },
 ];
 
 export default books;
