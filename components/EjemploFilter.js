@@ -17,18 +17,21 @@ export default function NameFilter() {
           type="text"
           value={filter}
           onChange={(e) => setFilter(e.target.value)}
-          placeholder="Filtrar títulos de libros"
+          placeholder="Buscar"
           className="border border-gray-300 rounded p-2 mr-4" // Añadir margen a la derecha
         />
       </div>
       <div className="flex flex-col items-center">
         {books
-          .filter((book) => book.title.toLowerCase().includes(filter.toLowerCase())) // Filtra por título
+          .filter((book) =>
+            book.title.toLowerCase().includes(filter.toLowerCase()) || 
+            book.genres.toLowerCase().includes(filter.toLowerCase())
+          ) // Filtra por título o género
           .map((book) => (
             <Book key={book.id} book={book} /> // Renderiza el componente Book
           ))}
       </div>
     </div>
   );
-  
 }
+

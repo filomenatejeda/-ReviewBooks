@@ -21,7 +21,9 @@ const Book = ({ book }) => {
       <div className="flex flex-col w-full"> {/* Contenedor para texto y botones */}
         <h3 className="text-lg font-semibold text-left mb-1 ml-4">{book.title}</h3>
         <h3 className="text-sm font-light text-left text-gray-500 mb-2 ml-4">{book.author}</h3> {/* Ajustes en el autor */}
-        
+        {book.genres && (
+          <p className="text-sm text-left text-gray-700 mb-2 ml-4">Géneros: {book.genres}</p>
+        )}
         {/* Contenedor para centrar las estrellas */}
         <div className="flex justify-left mb-2 p-5"> 
           <StarRating bookId={book.id} /> {/* Asegúrate de que este componente exista */}
