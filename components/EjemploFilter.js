@@ -25,8 +25,9 @@ export default function NameFilter() {
         {books
           .filter((book) =>
             book.title.toLowerCase().includes(filter.toLowerCase()) || 
-            book.genres.toLowerCase().includes(filter.toLowerCase())
-          ) // Filtra por título o género
+            book.genres.toLowerCase().includes(filter.toLowerCase()) ||
+            book.author.toLowerCase().includes(filter.toLowerCase()) // Filtra por autor
+          ) // Filtra por título, género o autor
           .map((book) => (
             <Book key={book.id} book={book} /> // Renderiza el componente Book
           ))}
@@ -34,4 +35,3 @@ export default function NameFilter() {
     </div>
   );
 }
-
