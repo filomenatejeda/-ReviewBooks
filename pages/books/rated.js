@@ -1,15 +1,13 @@
-// pages/books/rated.js
 import React, { useState, useEffect } from 'react';
-import books from '../../components/BookData';
-import Book from '../../components/Book';
-import Footer from '../../components/Footer';
-
-import NavBar from '../../components/Navbar';
-import GenreFilter from '../../components/GenreFilter';
+import books from '../../components/BookData'; // Importa los datos de los libros
+import Book from '../../components/Book'; // Importa el componente Book
+import Footer from '../../components/Footer'; // Importa el pie de página
+import NavBar from '../../components/Navbar'; // Importa la barra de navegación
+import GenreFilter from '../../components/GenreFilter'; // Importa el filtro de géneros
 
 const RatedBooks = () => {
-  const [ratedBooks, setRatedBooks] = useState([]);
-  const [selectedGenres, setSelectedGenres] = useState([]);
+  const [ratedBooks, setRatedBooks] = useState([]); // Estado para almacenar los libros calificados
+  const [selectedGenres, setSelectedGenres] = useState([]); // Estado para géneros seleccionados
 
   // Lista de géneros definidos manualmente
   const genresList = [
@@ -18,33 +16,33 @@ const RatedBooks = () => {
     'Fantasy',
     'Romance',
     'Horror',
-    'Adventure ',
+    'Adventure',
   ];
 
   useEffect(() => {
     const filteredBooks = books.filter((book) => {
       const savedRating = localStorage.getItem(`starRating_${book.id}`);
-      return savedRating && Number(savedRating) > 0;
+      return savedRating && Number(savedRating) > 0; // Filtra libros que tienen una calificación guardada
     });
-    setRatedBooks(filteredBooks);
+    setRatedBooks(filteredBooks); // Actualiza el estado con los libros calificados
   }, []);
 
   const handleGenreChange = (genre) => {
     setSelectedGenres((prevSelected) =>
-      prevSelected.includes(genre)
+      prevSelected.includes(genre) // Si el género ya está seleccionado, lo elimina
         ? prevSelected.filter((g) => g !== genre)
-        : [...prevSelected, genre]
+        : [...prevSelected, genre] // Si no está seleccionado, lo añade
     );
   };
 
   const filteredBooks = ratedBooks.filter((book) => {
-    if (selectedGenres.length === 0) return true;
-    return selectedGenres.some((genre) => book.genres.includes(genre));
+    if (selectedGenres.length === 0) return true; // Si no hay géneros seleccionados, devuelve todos los libros
+    return selectedGenres.some((genre) => book.genres.includes(genre)); // Filtra por géneros seleccionados
   });
 
   return (
     <div className="m-0 p-0 min-h-screen flex flex-col bg-gray-100">
-      <NavBar />
+      <NavBar /> {/* Muestra la barra de navegación */}
       <div className="bg-yellow-50 p-10">
         <h1 className="text-3xl font-bold mb-8 text-center mt-8">Mis Libros Calificados</h1>
       </div>
@@ -57,18 +55,19 @@ const RatedBooks = () => {
         {filteredBooks.length > 0 ? (
           filteredBooks.map((book) => (
             <div key={book.id} className="mb-6 w-500 h-150">
-              <Book book={book} />
+              <Book book={book} /> {/* Muestra cada libro calificado */}
             </div>
           ))
         ) : (
-          <p className="text-center text-gray-600">No has calificado ningún libro aún.</p>
+          <p className="text-center text-gray-600">No has calificado ningún libro aún.</p> // Mensaje si no hay libros calificados
         )}
       </div>
 
-      <Footer />
+      <Footer /> {/* Muestra el pie de página */}
     </div>
   );
 };
 
-export default RatedBooks;
+export default RatedBooks; // Exporta el componente
+
 

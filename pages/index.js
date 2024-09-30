@@ -1,13 +1,13 @@
-import NameFilter from '../components/EjemploFilter.js';
-import Footer from '../components/Footer.js';
+import NameFilter from '../components/EjemploFilter.js'; // Importa el componente de filtro
+import Footer from '../components/Footer.js'; // Importa el componente del pie de página
 import Link from 'next/link'; // Importa Link desde Next.js
 
 export default function Home() {
   return (
     <>
       <div>
-        <title>Review</title>
-        <script src="https://cdn.tailwindcss.com"></script>
+        <title>Review</title> {/* Título de la página */}
+        <script src="https://cdn.tailwindcss.com"></script> {/* Carga Tailwind CSS */}
       </div>
 
       {/* Cuadro negro superior */}
@@ -35,4 +35,5 @@ export default function Home() {
     </>
   );
 }
+
 
