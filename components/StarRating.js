@@ -10,7 +10,7 @@ function StarRating({ bookId }) {
   useEffect(() => {
     const savedRating = localStorage.getItem(`starRating_${bookId}`);
     if (savedRating) {
-      setRating(Number(savedRating));
+      setRating(Number(savedRating)); // Convertir a número y establecer la calificación
     }
   }, [bookId]);
 
@@ -30,7 +30,7 @@ function StarRating({ bookId }) {
 
   return (
     <div className="star-rating flex items-center">
-        {/* Mostrar la calificación seleccionada */}
+      {/* Mostrar la calificación seleccionada */}
       <p className="ml-1 mr-3">My rating: </p>
       {/* Creamos 5 estrellas */}
       {[...Array(5)].map((star, index) => {
@@ -62,11 +62,8 @@ function StarRating({ bookId }) {
           </label>
         );
       })}
-
-      {/* Mostrar la calificación seleccionada */}
     </div>
   );
 }
-
 
 export default StarRating;
