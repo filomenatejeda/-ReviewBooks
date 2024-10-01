@@ -8,6 +8,7 @@ import { useState } from 'react';
 import books from '../../../components/BookData'; 
 // Importa el componente StarRating para mostrar la calificación del libro
 import StarRating from '../../../components/StarRating'; 
+import Footer from '../../../components/Footer.js';
 
 // Componente principal para la revisión de un libro
 const BookReview = () => {
@@ -71,10 +72,11 @@ const BookReview = () => {
           placeholder="Escribe tu reseña aquí..."
           className="border border-gray-300 rounded p-2 w-full h-48" // Estilo para el textarea
         />
-        <button type="submit" className="mt-2 bg-blue-500 text-white p-2 rounded">
+        <button type="submit" className="mt-2 mb-10 bg-blue-500 text-white p-2 rounded">
           Enviar Reseña
         </button>
       </form>
+      <Footer />
     </div>
   );
 };

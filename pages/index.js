@@ -21,7 +21,7 @@ export default function Home() {
       <div>
         <div className="p-5 " style={{ backgroundColor: '#dbb377' }}>
           <h1 className="text-center text-white p-5 text-5xl">El Catálogo Crítico</h1>
-          <p className="text-center p-4 mb-0">
+          <p className="text-center p-10 mb-0">
             "Opiniones para los Amantes de los Libros"
           </p>
         </div>
