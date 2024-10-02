@@ -1,8 +1,16 @@
+import { useRouter } from 'next/router';
+
 import NameFilter from '../components/EjemploFilter.js'; // Importa el componente de filtro
 import Footer from '../components/Footer.js'; // Importa el componente del pie de página
 import Link from 'next/link'; // Importa Link desde Next.js
 
 export default function Home() {
+  //################################
+  // Usa el router para obtener el género ya elegido (que vendrá desde la página de sinopsis), estará vacío si se ingresa a la página sin clcikear en un género allí
+  const router = useRouter();
+  const { genre } = router.query;
+
+
   return (
     <>
       <div>
@@ -27,7 +35,11 @@ export default function Home() {
         </div>
 
         {/* Filtro de búsqueda */}
-        <NameFilter />
+        <NameFilter>
+          {/* ############################### */}
+          {/* Pasa el género obtenido al filtro para aplicar el filtro */}
+          {genre}
+        </NameFilter>
 
         {/* Footer */}
         <Footer />
@@ -35,5 +47,7 @@ export default function Home() {
     </>
   );
 }
+
+
 
 
