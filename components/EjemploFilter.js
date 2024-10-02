@@ -12,11 +12,12 @@ const genresList = [
   'Adventure',
 ];
 
-export default function EjemploFilter() {
+export default function EjemploFilter({ children }) {
   const [filter, setFilter] = useState(''); // Estado para el filtro de búsqueda por texto
   const [visibleBooks, setVisibleBooks] = useState(10); // Controla cuántos libros mostrar inicialmente
-  const [selectedGenres, setSelectedGenres] = useState([]); // Estado para los géneros seleccionados
-
+  //#####################
+  const [selectedGenres, setSelectedGenres] = useState(children ? [children] : []); // Estado para los géneros seleccionados, solamente si antes se recibió un género con el cual filtrar, se agregará a la lista, para evitar agregar undefined
+  // ####################
   // Función para manejar cambios en los checkboxes de géneros
   const handleGenreChange = (genre) => {
     if (selectedGenres.includes(genre)) {
@@ -110,4 +111,6 @@ export default function EjemploFilter() {
     </div>
   );
 }
+
+
 
