@@ -4,6 +4,8 @@ import books from '../../../components/BookData';
 import StarRating from '../../../components/StarRating';
 import Footer from '../../../components/Footer.js';
 import Reviews from '../../../components/Reviews';
+import { useState, useEffect } from 'react'; // Importa useState y useEffect
+import Favorite from '../../../components/Favorite'; // Importa el componente Favorite
 
 // Componente principal para la sinopsis de un libro
 const BookSynopsis = () => {
@@ -12,7 +14,23 @@ const BookSynopsis = () => {
   const book = books.find(b => b.id === id); // Encuentra el libro correspondiente al ID
 
   // Manejo de carga si el libro no se encuentra
-  if (!book) return <p>Cargando...</p>; 
+  if (!book) return <p>Cargando...</p>;
+
+  // Estado para manejar si el libro es favorito
+  const [isFavorite, setIsFavorite] = useState(false);
+
+  // Efecto para comprobar si el libro está marcado como favorito
+  useEffect(() => {
+    const favoriteStatus = localStorage.getItem(`favorite_${book.id}`); // Comprueba el estado de favorito
+    setIsFavorite(favoriteStatus === 'true'); // Actualiza el estado según lo almacenado
+  }, [book.id]);
+
+  // Función para manejar el toggle de favorito
+  const toggleFavorite = () => {
+    const newFavoriteStatus = !isFavorite;
+    setIsFavorite(newFavoriteStatus);
+    localStorage.setItem(`favorite_${book.id}`, newFavoriteStatus); // Guarda el nuevo estado en localStorage
+  };
 
   // Función para manejar el clic en un género
   const handleGenreClick = (genre) => {
@@ -53,7 +71,17 @@ const BookSynopsis = () => {
         
         <div className="flex-1">
           <div className="mb-1 w-[1000px] min-h-[300px] mr-10 p-3 border border-gray-300 rounded bg-white shadow-md flex flex-col justify-center">
-            <h2 className="text-4xl font-bold">{book.title}</h2>
+            <h2 className="text-4xl font-bold flex items-center">
+              {book.title}
+              {/* Ícono de favorito */}
+              <div className='ml-4'>
+              <Favorite 
+                isFavorite={isFavorite} 
+                onToggle={toggleFavorite} 
+                className="ml-5" // Añade margen izquierdo para separarlo del título
+              />
+              </div>
+            </h2>
             <h3 className="mb-3 font-bold text-gray-700">{book.author}</h3>
             <StarRating bookId={book.id} /> {/* Componente que permite calificar el libro */}
             <p className="mt-2 text-gray-700">{book.date}</p>

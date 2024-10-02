@@ -24,6 +24,9 @@ export default function Home() {
         <Link href="/books/rated" className="text-white text-xl underline">
           Mis Calificaciones
         </Link>
+        <Link href="/books/favorite" className="text-white text-xl underline">
+          Mis Favoritos
+        </Link>
       </div>
 
       <div>
