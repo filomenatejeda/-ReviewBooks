@@ -1,13 +1,9 @@
-// Importa el hook useRouter de Next.js para acceder a la información de la ruta
 import { useRouter } from 'next/router';
-// Importa Link para permitir la navegación entre páginas
 import Link from 'next/link';
-// Importa la lista de libros desde BookData
 import books from '../../../components/BookData';
-// Importa el componente StarRating para mostrar la calificación del libro
 import StarRating from '../../../components/StarRating';
-// Importa el componente Footer para el pie de página
 import Footer from '../../../components/Footer.js';
+import Reviews from '../../../components/Reviews';
 
 // Componente principal para la sinopsis de un libro
 const BookSynopsis = () => {
@@ -56,7 +52,7 @@ const BookSynopsis = () => {
         </div>
         
         <div className="flex-1">
-          <div className="mb-1 w-[1000px] h-[300px] mr-10 p-3 border border-gray-300 rounded bg-white shadow-md flex flex-col justify-center">
+          <div className="mb-1 w-[1000px] min-h-[300px] mr-10 p-3 border border-gray-300 rounded bg-white shadow-md flex flex-col justify-center">
             <h2 className="text-4xl font-bold">{book.title}</h2>
             <h3 className="mb-3 font-bold text-gray-700">{book.author}</h3>
             <StarRating bookId={book.id} /> {/* Componente que permite calificar el libro */}
@@ -76,13 +72,15 @@ const BookSynopsis = () => {
             )).reduce((prev, curr) => [prev, ', ', curr])} {/* Añade comas entre géneros */}
           </p>
           <div className="mt-2 mr-10 flex justify-end">
-            <div className="mb-10 w-[1000px] h-[350px] p-3 rounded bg-white shadow-md">
+            <div className="mb-10 w-[1000px] min-h-[100px] p-3 rounded bg-white shadow-md"> {/* Cambiado h-350px a min-h-350px */}
               <h3 className="text-lg font-semibold">Reseña:</h3>
               <p className="mt-2">{book.review || "No hay reseña disponible."}</p> {/* Muestra la reseña del libro */}
             </div>
           </div>
         </div>
       </div>
+      {/* Aquí añades el componente de reseñas */}
+      <Reviews bookId={id} /> 
 
       <Footer /> {/* Pie de página */}
     </div>

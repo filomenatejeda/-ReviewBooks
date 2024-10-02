@@ -35,11 +35,11 @@ const BookReview = () => {
   if (!book) return <p>Cargando...</p>; 
 
   return (
-    <div className="p-4">
+    <div className="p-0 bg-gray-200 min-h-screen"> {/* Fondo gris y mínimo alto para ocupar toda la pantalla */}
       {/* Breadcrumb de navegación para la localización dentro de la aplicación */}
-      <div className="mb-4 p-4 bg-gray-800 text-white rounded">
+      <div className="mb-4 p-4 bg-gray-800 text-white px-0">
         <Link href={`/`}>
-          <a className="text-blue-400 hover:underline">Home</a> {/* Enlace a la página principal */}
+          <a className="text-blue-400 hover:underline ml-4">Home</a> {/* Enlace a la página principal */}
         </Link>
         <span> &gt; </span> {/* Flecha de separación */}
         <Link href={`/books/synopsis/${id}`}>
@@ -48,7 +48,7 @@ const BookReview = () => {
         <span> &gt; Review</span> {/* Flecha indicando la navegación actual */}
       </div>
 
-      <div className="flex flex-col md:flex-row items-center mb-4"> {/* Contenedor para el diseño de imagen y texto */}
+      <div className="flex flex-col md:flex-row items-center mb-4 ml-4"> {/* Contenedor para el diseño de imagen y texto */}
         {book.imageUrl && ( // Agrega la imagen del libro si está disponible
           <img 
             src={book.imageUrl} 
@@ -61,25 +61,26 @@ const BookReview = () => {
           <h2 className="text-xl font-medium text-gray-700">{book.author}</h2> {/* Autor del libro */}
         </div>
       </div>
-      
+      <div className='ml-4'>
       <StarRating bookId={book.id} /> {/* Componente que permite calificar el libro */}
-      
+      </div>
       {/* Formulario para escribir la reseña */}
-      <form onSubmit={handleReviewSubmit} className="mt-4">
+      <form onSubmit={handleReviewSubmit} className="mt-4 ml-4">
         <textarea
           value={review}
           onChange={(e) => setReview(e.target.value)} // Actualiza el estado de la reseña al escribir
           placeholder="Escribe tu reseña aquí..."
-          className="border border-gray-300 rounded p-2 w-full h-48" // Estilo para el textarea
+          className="border border-gray-300 rounded p-2 mr-10 w-full h-80" // Estilo para el textarea
         />
         <button type="submit" className="mt-2 mb-10 bg-blue-500 text-white p-2 rounded">
           Enviar Reseña
         </button>
       </form>
-      <Footer />
+      <Footer className="w-full m-0 p-0 px-0" /> {/* Pie de página sin márgenes */}
     </div>
   );
 };
 
 // Exporta el componente BookReview para su uso en otras partes de la aplicación
 export default BookReview;
+
