@@ -51,11 +51,15 @@ const RatedBooks = () => {
         selectedGenres={selectedGenres}
         handleGenreChange={handleGenreChange}
       />
-      <div className="flex flex-col items-center">
+      {/* Contenedor para los libros */}
+      <div className="flex flex-wrap justify-center">
         {filteredBooks.length > 0 ? (
           filteredBooks.map((book) => (
-            <div key={book.id} className="mb-6 w-500 h-150">
-              <Book book={book} /> {/* Muestra cada libro calificado */}
+            <div key={book.id} className="mb-6 mx-4 w-1/2 md:w-90">
+              {/* Ajustar el tamaño del cuadro del libro */}
+              <div className="bg-white shadow-md rounded-lg overflow-hidden p-4 h-70 flex flex-col">
+                <Book book={book} /> {/* Muestra cada libro calificado */}
+              </div>
             </div>
           ))
         ) : (
@@ -69,5 +73,4 @@ const RatedBooks = () => {
 };
 
 export default RatedBooks; // Exporta el componente
-
 
