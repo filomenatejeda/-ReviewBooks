@@ -1,8 +1,8 @@
-import { useState } from 'react';
-import books from './BookData.js'; // Asegúrate de importar la lista de libros
-import Book from './Book.js'; // Importa el componente Book
+import { useState, useEffect } from 'react';
+import books from './BookData.js';
+import Book from './Book.js';
+import Favorite from './Favorite.js'; // Importa el componente Favorite
 
-// Lista de géneros disponibles para los checkboxes
 const genresList = [
   'Fiction',
   'Science Fiction',
@@ -13,57 +13,63 @@ const genresList = [
 ];
 
 export default function EjemploFilter({ children }) {
-  const [filter, setFilter] = useState(''); // Estado para el filtro de búsqueda por texto
-  const [visibleBooks, setVisibleBooks] = useState(10); // Controla cuántos libros mostrar inicialmente
-  //#####################
-  const [selectedGenres, setSelectedGenres] = useState(children ? [children] : []); // Estado para los géneros seleccionados, solamente si antes se recibió un género con el cual filtrar, se agregará a la lista, para evitar agregar undefined
-  // ####################
-  // Función para manejar cambios en los checkboxes de géneros
+  const [filter, setFilter] = useState('');
+  const [visibleBooks, setVisibleBooks] = useState(10);
+  const [selectedGenres, setSelectedGenres] = useState(children ? [children] : []);
+  const [favorites, setFavorites] = useState([]);
+
+  // Cargar favoritos desde localStorage al iniciar el componente
+  useEffect(() => {
+    const savedFavorites = JSON.parse(localStorage.getItem('favorites')) || [];
+    setFavorites(savedFavorites);
+  }, []);
+
+  // Guardar favoritos en localStorage cada vez que cambie
+  useEffect(() => {
+    localStorage.setItem('favorites', JSON.stringify(favorites));
+  }, [favorites]);
+
   const handleGenreChange = (genre) => {
     if (selectedGenres.includes(genre)) {
-      // Si el género ya está seleccionado, lo eliminamos
       setSelectedGenres(selectedGenres.filter((g) => g !== genre));
     } else {
-      // Si no está seleccionado, lo añadimos
       setSelectedGenres([...selectedGenres, genre]);
     }
   };
 
-  // Función para cargar más libros (incrementa el número de libros visibles)
   const loadMoreBooks = () => {
     setVisibleBooks((prevVisibleBooks) => prevVisibleBooks + 10);
   };
 
-  // Filtra los libros según el filtro de texto (título, autor, o géneros) y los géneros seleccionados
-  const filteredBooks = books.filter((book) => {
-    // Convertir la cadena de géneros en un array y eliminar espacios
-    const bookGenres = book.genres.split(',').map((genre) => genre.trim());
+  // Función para manejar el marcado de favoritos
+  const toggleFavorite = (bookId) => {
+    setFavorites((prevFavorites) =>
+      prevFavorites.includes(bookId)
+        ? prevFavorites.filter((id) => id !== bookId)
+        : [...prevFavorites, bookId]
+    );
+  };
 
-    // Filtrar por título, autor o géneros en el campo de búsqueda
+  const filteredBooks = books.filter((book) => {
+    const bookGenres = book.genres.split(',').map((genre) => genre.trim());
     const matchesFilter = book.title.toLowerCase().includes(filter.toLowerCase()) ||
                           book.author.toLowerCase().includes(filter.toLowerCase()) ||
                           bookGenres.some((genre) => genre.toLowerCase().includes(filter.toLowerCase()));
-
-    // Filtrar por géneros seleccionados (checkboxes)
     const matchesGenre = selectedGenres.length === 0 || selectedGenres.some((genre) => bookGenres.includes(genre));
-
     return matchesFilter && matchesGenre;
   });
 
   return (
     <div className='p-4 text-center bg-yellow-50 mt-0'>
-      {/* Contenedor de búsqueda por texto y géneros */}
       <div className="flex items-center mb-4 bg-gray-800 p-4">
-        {/* Contenedor del input con lupa */}
         <div className="relative w-50">
           <input
             type="text"
             value={filter}
             onChange={(e) => setFilter(e.target.value)}
             placeholder="Buscar"
-            className="border border-gray-300 rounded p-2 pl-10 w-full" // Espacio a la izquierda para la lupa
+            className="border border-gray-300 rounded p-2 pl-10 w-full"
           />
-          {/* Icono de lupa */}
           <svg
             xmlns="http://www.w3.org/2000/svg"
             className="h-5 w-5 absolute top-1/2 left-3 transform -translate-y-1/2 text-gray-400"
@@ -74,7 +80,6 @@ export default function EjemploFilter({ children }) {
           </svg>
         </div>
 
-        {/* Checkboxes para filtrar por género */}
         <div className="flex flex-wrap justify-start ml-4">
           {genresList.map((genre) => (
             <label key={genre} className="m-2 text-white">
@@ -90,27 +95,25 @@ export default function EjemploFilter({ children }) {
         </div>
       </div>
 
-      {/* Lista de libros filtrados */}
       <div className="flex flex-col items-center">
-        {filteredBooks
-          .slice(0, visibleBooks) // Mostrar solo el número de libros controlado por visibleBooks
-          .map((book) => (
-            <Book key={book.id} book={book} />
-          ))}
+        {filteredBooks.slice(0, visibleBooks).map((book) => (
+          <div key={book.id} className="flex items-center justify-between w-full border-b py-2">
+            <Book book={book} />
+            <div className="ml-4">
+              <Favorite 
+                isFavorite={favorites.includes(book.id)} 
+                onToggle={() => toggleFavorite(book.id)} 
+              />
+            </div>
+          </div>
+        ))}
       </div>
 
-      {/* Botón para cargar más libros */}
       {visibleBooks < filteredBooks.length && (
-        <button 
-          onClick={loadMoreBooks} 
-          className="mt-4 p-2 bg-blue-500 text-white rounded"
-        >
+        <button onClick={loadMoreBooks} className="mt-4 p-2 bg-blue-500 text-white rounded">
           Cargar más
         </button>
       )}
     </div>
   );
 }
-
-
-
