@@ -9,7 +9,7 @@ const books = [
     synopsis: 'Una expedición al Polo Norte se cruza, en mitad del mar helado, con un misterioso hombre gigantesco marchando en un trineo a toda velocidad. Horas después, rescatan a otro un hombre a punto de morir. Cuando este se recupera, relata al capitán la historia de cómo ha acabado allí, persiguiendo a aquella criatura monstruosa.',
     review: '', // Campo para la reseña
     author: 'Mary Wollstonecraft Shelley',
-    genres: 'Horror, Fiction, Literature, Fantasy', // Géneros separados por comas
+    genres: 'Horror, Ficción, Literatura, Fantasía', // Géneros separados por comas
   },
   {
     id: 'book2',
@@ -19,7 +19,7 @@ const books = [
     synopsis: 'Tras una década de guerra, Ulises regresa desde Troya hasta su hogar, Ítaca. La Odisea narra la larga travesía y todas las aventuras vividas por Ulises. Se cruzará con el cíclope Polifemo, con la maga Circe o con la ninfa Calipso. Historias que, casi 3.000 años después, siguen formando parte de nuestra cultura.',
     review: '',
     author: 'Homero',
-    genres: 'Fiction, Poetry, Classics, Fantasy', // Géneros separados por comas
+    genres: 'Ficción, Poesía, Clásica, Fantasía', // Géneros separados por comas
   },
   {
     id: 'book3',
@@ -29,7 +29,7 @@ const books = [
     synopsis: 'Hace cinco años, la estudiante Andie Bell fue asesinada por Sal Singh. La policía sabe que fue él. Sus compañeros también. Todo el mundo lo sabe. Pero Pippa ha crecido en la misma ciudad que ha sido y no lo tiene tan claro... Decidida a desenterrar la verdad, Pippa convierte este asesinato en el tema de su proyecto de final de curso. Poco a poco, empezará a descubrir secretos que alguien se ha empeñado en ocultar. Si el asesino sigue suelto ¿qué será́ capaz de hacer para mantener a Pippa alejada de la verdad?',
     review: '',
     author: 'Holly Jackson',
-    genres: 'Mystery, Thriller, Drama, Police, Fiction, Crime' // Puedes dejarlo vacío o agregar géneros
+    genres: 'Misterio, Thriller, Drama, Policia, Ficción, Crimen' // Puedes dejarlo vacío o agregar géneros
   },
   {
     id: 'book4',
@@ -39,7 +39,7 @@ const books = [
     synopsis: 'En el Pandemonium, la discoteca de moda de Nueva York, Clary sigue a un atractivo chico de pelo azul hasta que presencia su muerte a manos de tres jóvenes cubiertos de extraños tatuajes. Desde esa noche, su destino se une al de esos tres cazadores de sombras, guerreros dedicados a liberar a la tierra de demonios y, sobre todo, al de Jace, un chico con aspecto de ángel y tendencia a actuar como un idiota...',
     review: '',
     author: 'Cassandra Clare',
-    genres: 'Fantasy, Romance, Fiction, Vampires' // Puedes dejarlo vacío o agregar géneros
+    genres: 'Fantasía, Romance, Ficción, Vampiros' // Puedes dejarlo vacío o agregar géneros
   },
   {
     id: 'book5',
@@ -49,7 +49,7 @@ const books = [
     synopsis: 'El matrimonio Bennet tiene cinco hijas casaderas de entre 15 y 23 años. Conseguir colocarlas con un buen casamiento es la única esperanza que puede albelgar la madre, sabedora de que sus hijas perderán su escasa fortuna cuando fallezcan sus padres. La llegada de un joven y rico hacendado, Charles Bingley; revoluciona la pequeña sociedad de pretendientes. Viene acompañado de Fitzwilliam Darcy que se gana pronto fama de distante y antipático. La presencia de los dos jóvenes será el desencadenante de un torrente de pasiones que alcanzará también a Elizabeth Bennet, centro de toda la historia.',
     review: '',
     author: 'Jane Austen',
-    genres: 'Fiction, Historical, Literature, Novels, Romance' // Puedes dejarlo vacío o agregar géneros
+    genres: 'Ficción, Historica, Literatura, Novela, Romance' // Puedes dejarlo vacío o agregar géneros
   },
   {
     id: 'book6',
@@ -59,7 +59,7 @@ const books = [
     synopsis: 'Meg, Jo, Beth y Amy son cuatro hermanas adolescentes muy distintas, a las que les une su imaginación y la voluntad de romper con las normas de conducta propias de la época. Acompañadas de su madre, su tía y sus vecinos, las chicas March pronto demuestran que crecer puede ser la mayor de las aventuras.',
     review: '',
     author: 'Louisa May Alcott',
-    genres: 'Classics, Romance, Drama, Fiction, Novels' // Puedes dejarlo vacío o agregar géneros
+    genres: 'Clásica, Romance, Drama, Ficción, Novela' // Puedes dejarlo vacío o agregar géneros
   },
   {
     id: 'book7',
@@ -69,7 +69,7 @@ const books = [
     synopsis: 'En el desértico planeta Arrakis, el agua es el bien más preciado y llorar a los muertos, el símbolo de máxima prodigalidad. Pero algo hace de Arrakis una pieza estratégica para los intereses del Emperador, las Grandes Casas y la Cofradía, los tres grandes poderes de la galaxia.',
     review: '',
     author: 'Frank Herbert',
-    genres: 'Science Fiction, Fiction, Fantasy' // Puedes dejarlo vacío o agregar géneros
+    genres: 'Ciencia Ficción, Ficción, Fantasía' // Puedes dejarlo vacío o agregar géneros
   },
   {
     id: 'book8',
@@ -79,48 +79,49 @@ const books = [
     synopsis: 'Durante mil años han caído las cenizas y nada florece. Durante mil años los skaa han sido esclavizados y viven sumidos en un miedo inevitable. Durante mil años el Lord Legislador reina con un poder absoluto gracias al terror, a sus poderes y a su inmortalidad. Pero vencer y matar al Lord Legislador fue la parte sencilla. El verdadero desafío será sobrevivir a las consecuencias de su caída. Tomar el poder tal vez resultó fácil, pero ¿qué ocurre después?, ¿cómo se utiliza? En ese mundo de aventura épica, la estrategia política y religiosa debe lidiar con los siempre misteriosos poderes de la alomancia...',
     review: '',
     author: 'Brandon Sanderson',
-    genres: 'Epic Fantasy, Fantasy, Fiction, Science Fiction, Adventure ' // Puedes dejarlo vacío o agregar géneros
+    genres: 'Fantasía Epica, Fantasía, Ficción, Ciencia Ficción, Adventura ' // Puedes dejarlo vacío o agregar géneros
   },
   {
     id: 'book9',
-    title: 'Título del Libro 3',
-    imageUrl: 'URL_DE_LA_IMAGEN_DEL_LIBRO_3',
-    date: 'fecha',
-    synopsis: 'Esta es la sinopsis del Libro 3.',
+    title: 'Harry Potter',
+    imageUrl: 'https://images.cdn2.buscalibre.com/fit-in/360x360/e3/bc/e3bcd85377567759874a0664f894a67b.jpg',
+    date: '1997',
+    synopsis: 'El día de su cumpleaños, Harry Potter descubre que es hijo de dos conocidos hechiceros, de los que ha heredado poderes mágicos. Debe asistir a una famosa escuela de magia y hechicería, donde entabla una amistad con dos jóvenes que se convertirán en sus compañeros de aventura. Durante su primer año en Hogwarts, descubre que un malévolo y poderoso mago llamado Voldemort está en busca de una piedra filosofal que alarga la vida de quien la posee..',
     review: '',
-    author: 'Autor del Libro 3',
-    genres: '' // Puedes dejarlo vacío o agregar géneros
+    author: 'J.K Rowling',  
+    genres: 'Fantasía, Advertura, Acción' // Puedes dejarlo vacío o agregar géneros
   },
   {
     id: 'book10',
-    title: 'Título del Libro 3',
-    imageUrl: 'URL_DE_LA_IMAGEN_DEL_LIBRO_3',
-    date: 'fecha',
-    synopsis: 'Esta es la sinopsis del Libro 3.',
-    review: '',
-    author: 'Autor del Libro 3',
-    genres: '' // Puedes dejarlo vacío o agregar géneros
+    title: '1984',
+    imageUrl: 'https://cdn.prod.website-files.com/6034d7d1f3e0f52c50b2adee/6254291caac6d1e42e8986df_62023ceb41cd1c2807b2841a_9788418933011.jpeg',
+    date: '1949',
+    synopsis: '1984 es la antiutopía o distopía más célebre de todas cuantas fueron escritas durante la primera mitad del siglo XX. En ella, Orwell presenta un futuro en el que una dictadura totalitaria interfiere hasta tal punto en la vida privada de los ciudadanos que resulta imposible escapar a su control.',
+    review: '', 
+    author: 'George Orwell',
+    genres: 'Ciencia Ficción, Ficción, Política' // Puedes dejarlo vacío o agregar géneros
   },
   {
     id: 'book11',
-    title: 'Título del Libro 3',
-    imageUrl: 'URL_DE_LA_IMAGEN_DEL_LIBRO_3',
-    date: 'fecha',
-    synopsis: 'Esta es la sinopsis del Libro 3.',
+    title: 'El Señor de los Anillos',
+    imageUrl: 'https://images.cdn1.buscalibre.com/fit-in/360x360/35/2e/352e63af40b5cc4eada5cee03da49412.jpg',
+    date: '1954',
+    synopsis: 'En la Tierra Media, el Señor Oscuro Sauron forjó los Grandes Anillos del Poder y creó uno con el poder de esclavizar a toda la Tierra Media. Frodo Bolsón es un hobbit al que su tío Bilbo hace portador del poderoso Anillo Único con la misión de destruirlo. Acompañado de sus amigos, Frodo emprende un viaje hacia Mordor, el único lugar donde el anillo puede ser destruido. Sin embargo, Sauron ordena la persecución del grupo para recuperar el anillo y acabar con la Tierra Media.',
     review: '',
-    author: 'Autor del Libro 3',
-    genres: '' // Puedes dejarlo vacío o agregar géneros
+    author: 'J.R.R Tolkien',
+    genres: 'Fantasía, Ficción, Adventura' // Puedes dejarlo vacío o agregar géneros
   },
   {
     id: 'book12',
-    title: 'Título del Libro 3',
-    imageUrl: 'URL_DE_LA_IMAGEN_DEL_LIBRO_3',
-    date: 'fecha',
-    synopsis: 'Esta es la sinopsis del Libro 3.',
+    title: 'La clave secreta del Universo',
+    imageUrl: 'https://www.penguinlibros.com/cl/1773587/la-clave-secreta-del-universo-la-clave-secreta-del-universo-1.jpg',
+    date: 'Año: 2007',
+    synopsis: 'A George nada le gusta más en el mundo que mirar las estrellas; también le encantaría tener un ordenador con el que navegar y conocer más sobre el Universo, pero sabe que eso es misión imposible. En casa, sus padres son tan ecologistas que no quieren ni oír hablar del progreso y la ciencia. Pero lo que ellos no saben es que el enemigo está muy cerca: acaba de llegar un nuevo vecino que, ¡horror!, es un eminente científico, y eso, para los padres de George, solo significa una cosa: peligro. Si hubieran imaginado lo que le esperaba a su hijo, nunca le habrían dejado entrar en su casa...',
     review: '',
-    author: 'Autor del Libro 3',
-    genres: '' // Puedes dejarlo vacío o agregar géneros
-  },
+    author: 'Lucy & Stephen Hawking',
+    genres: 'Ciencia, Ciencia Ficción' // Puedes dejarlo vacío o agregar géneros
+  },// Puedes dejarlo vacío o agregar géneros
+  
   {
     id: 'book13',
     title: 'Título del Libro 3',
