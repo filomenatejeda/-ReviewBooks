@@ -71,8 +71,9 @@ const Reviews = ({ bookId }) => {
     <div className="mt-4 flex mx-10"> {/* Añadido mx-4 para mover el contenido a la derecha */}
       {/* Columna izquierda para la calificación promedio */}
       <div className="mr-8 flex flex-col items-start ml-10"> {/* Cambiado a items-start para alinear a la izquierda */}
-        <h3 className="text-2xl ml-10 font-bold">{averageRating.toFixed(1)}</h3>
-        <StarRating rating={averageRating} /> {/* Estrellas para el promedio */}
+        <h3 className="text-2xl ml-10 flex bg-gray-100 mt-2 rounded-lg font-bold">{averageRating.toFixed(1)}</h3>
+        <div className ="bg-gray-100 flex rounded-lg p-2 mb-2 shadow-md"><StarRating rating={averageRating} /> 
+         </div>{/* Estrellas para el promedio */}
       </div>
 
       {/* Reseñas de otros usuarios */}
@@ -106,4 +107,4 @@ const Reviews = ({ bookId }) => {
   );
 };
 
-export default Reviews;
+export default Reviews; 

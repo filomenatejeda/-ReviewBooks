@@ -31,7 +31,7 @@ function StarRating({ bookId }) {
   return (
     <div className="star-rating flex items-center">
       {/* Mostrar la calificación seleccionada */}
-      <p className="ml-1 mr-3">My rating: </p>
+      <p className="ml-1 mr-3">Mi Calificacion: </p>
       {/* Creamos 5 estrellas */}
       {[...Array(5)].map((star, index) => {
         const ratingValue = index + 1;

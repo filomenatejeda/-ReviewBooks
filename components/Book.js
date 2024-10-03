@@ -14,7 +14,7 @@ const Book = ({ book }) => {
           <img 
             src={book.imageUrl} 
             alt={book.title} 
-            className="w-48 h-48 object-cover cursor-pointer mr-5 mb-2" // Añadir margen a la derecha
+            className="w-48 h-64 object-cover cursor-pointer mr-5 mb-2" // Añadir margen a la derecha
           />
         </Link>
       )}

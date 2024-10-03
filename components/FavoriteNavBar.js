@@ -9,7 +9,7 @@ const FavoriteNavBar = () => {
       {/* Enlace a la página principal de la aplicación */}
       <Link href={`/`}>
         {/* Texto que sirve como enlace, cambia de color al pasar el mouse y subraya el texto */}
-        <span className="text-blue-400 hover:underline cursor-pointer">Home</span>
+        <span className="text-blue-400 hover:underline cursor-pointer">Inicio</span>
       </Link>
       {/* Separador visual entre enlaces */}
       <span className="mx-2"> &gt; </span>
@@ -21,3 +21,4 @@ const FavoriteNavBar = () => {
 
 // Exporta el componente NavBar para su uso en otras partes de la aplicación
 export default FavoriteNavBar;
+
