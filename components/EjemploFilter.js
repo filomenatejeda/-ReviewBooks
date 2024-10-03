@@ -51,6 +51,17 @@ export default function EjemploFilter({ children }) {
     setSelectedGenres([]);
   };
 
+  // Definir la función toggleFavorite
+  const toggleFavorite = (bookId) => {
+    setFavorites((prevFavorites) => {
+      if (prevFavorites.includes(bookId)) {
+        return prevFavorites.filter((id) => id !== bookId); // Eliminar de favoritos
+      } else {
+        return [...prevFavorites, bookId]; // Agregar a favoritos
+      }
+    });
+  };
+
   const filteredBooks = books.filter((book) => {
     const bookGenres = book.genres.split(',').map((genre) => genre.trim());
     const matchesFilter = book.title.toLowerCase().includes(filter.toLowerCase()) ||
@@ -128,5 +139,3 @@ export default function EjemploFilter({ children }) {
     </div>
   );
 }
-
-
