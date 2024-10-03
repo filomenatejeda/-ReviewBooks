@@ -10,6 +10,7 @@ import books from '../../../components/BookData';
 import StarRating from '../../../components/StarRating'; 
 import Footer from '../../../components/Footer.js';
 
+<title>Escribir Reseña</title>
 // Componente principal para la revisión de un libro
 const BookReview = () => {
   const router = useRouter();
@@ -39,15 +40,15 @@ const BookReview = () => {
       {/* Breadcrumb de navegación para la localización dentro de la aplicación */}
       <div className="mb-4 p-4 bg-gray-800 text-white px-0">
         <Link href={`/`}>
-          <a className="text-blue-400 hover:underline ml-4">Home</a> {/* Enlace a la página principal */}
+          <a className="text-blue-400 hover:underline ml-4">Inicio</a> {/* Enlace a la página principal */}
         </Link>
         <span> &gt; </span> {/* Flecha de separación */}
         <Link href={`/books/synopsis/${id}`}>
           <a className="text-blue-400 hover:underline">{book.title}</a> {/* Enlace al título del libro */}
         </Link>
-        <span> &gt; Review</span> {/* Flecha indicando la navegación actual */}
+        <span> &gt; Escribir Reseña</span> {/* Flecha indicando la navegación actual */}
       </div>
-
+      <title>Escribir Reseña</title>
       <div className="flex flex-col md:flex-row items-center mb-4 ml-4"> {/* Contenedor para el diseño de imagen y texto */}
         {book.imageUrl && ( // Agrega la imagen del libro si está disponible
           <img 
@@ -83,4 +84,3 @@ const BookReview = () => {
 
 // Exporta el componente BookReview para su uso en otras partes de la aplicación
 export default BookReview;
-

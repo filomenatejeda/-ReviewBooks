@@ -12,12 +12,16 @@ const FavoriteBooks = () => {
 
   // Lista de géneros definidos manualmente
   const genresList = [
-    'Fiction',
-    'Science Fiction',
-    'Fantasy',
-    'Romance',
-    'Horror',
-    'Adventure',
+   'Ficción',
+  'Ciencia Ficción',
+  'Fantasía',
+  'Romance',
+  'Horror',
+  'Adventura',
+  'Política',
+  'Clásica',
+  'Poesía',
+  'Literatura',
   ];
 
   useEffect(() => {
@@ -57,8 +61,9 @@ const FavoriteBooks = () => {
     <div className="m-0 p-0 min-h-screen flex flex-col bg-gray-100">
       <FavoriteNavBar /> {/* Muestra la barra de navegación */}
       <div className="bg-yellow-50 p-10">
-        <h1 className="text-3xl font-bold mb-8 text-center mt-8">Mis Libros Favoritos</h1>
+        <h1 className="text-3xl font-bold mb-4 text-center mt-4">Mis Libros Favoritos</h1>
       </div>
+      <title>Mis Favoritos</title>
       <GenreFilter
         genresList={genresList}
         selectedGenres={selectedGenres}
@@ -78,7 +83,7 @@ const FavoriteBooks = () => {
             </div>
           ))
         ) : (
-          <p className="text-center text-gray-600">No tienes libros favoritos aún.</p> // Mensaje si no hay libros favoritos
+          <p className="text-center text-gray-600 p-24 mb-24 ">No tienes libros favoritos aún.</p> // Mensaje si no hay libros favoritos
         )}
       </div>
 

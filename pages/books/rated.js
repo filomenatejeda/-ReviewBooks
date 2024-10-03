@@ -11,12 +11,16 @@ const RatedBooks = () => {
 
   // Lista de géneros definidos manualmente
   const genresList = [
-    'Fiction',
-    'Science Fiction',
-    'Fantasy',
-    'Romance',
-    'Horror',
-    'Adventure',
+    'Ficción',
+  'Ciencia Ficción',
+  'Fantasía',
+  'Romance',
+  'Horror',
+  'Adventura',
+  'Política',
+  'Clásica',
+  'Poesía',
+  'Literatura',
   ];
 
   useEffect(() => {
@@ -44,8 +48,9 @@ const RatedBooks = () => {
     <div className="m-0 p-0 min-h-screen flex flex-col bg-gray-100">
       <NavBar /> {/* Muestra la barra de navegación */}
       <div className="bg-yellow-50 p-10">
-        <h1 className="text-3xl font-bold mb-8 text-center mt-8">Mis Libros Calificados</h1>
+        <h1 className="text-3xl font-bold mb-4 text-center mt-4">Mis Libros Calificados</h1>
       </div>
+      <title>Mis Calificaciones</title>
       <GenreFilter
         genresList={genresList}
         selectedGenres={selectedGenres}
@@ -63,7 +68,7 @@ const RatedBooks = () => {
             </div>
           ))
         ) : (
-          <p className="text-center text-gray-600">No has calificado ningún libro aún.</p> // Mensaje si no hay libros calificados
+          <p className="text-center text-gray-600 p-24 mb-24">No has calificado ningún libro aún.</p> // Mensaje si no hay libros calificados
         )}
       </div>
 

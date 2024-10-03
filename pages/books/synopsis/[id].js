@@ -54,7 +54,7 @@ const BookSynopsis = () => {
       {/* Barra de navegación */}
       <nav className="mb-4 p-4 bg-gray-800 text-white">
         <Link href={`/`} className="text-blue-400 hover:underline">
-          Home
+          Inicio
         </Link>
         <span> &gt; Sinopsis</span>
       </nav>

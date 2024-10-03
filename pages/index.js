@@ -14,7 +14,7 @@ export default function Home() {
   return (
     <>
       <div>
-        <title>Review</title> {/* Título de la página */}
+        <title>Inicio</title> {/* Título de la página */}
         <script src="https://cdn.tailwindcss.com"></script> {/* Carga Tailwind CSS */}
       </div>
 
@@ -24,6 +24,7 @@ export default function Home() {
         <Link href="/books/rated" className="text-white text-xl underline">
           Mis Calificaciones
         </Link>
+        <h2 className ="text-center text-white text-2xl">StarReview</h2>
         <Link href="/books/favorite" className="text-white text-xl underline">
           Mis Favoritos
         </Link>
@@ -31,8 +32,8 @@ export default function Home() {
 
       <div>
         <div className="p-5 " style={{ backgroundColor: '#dbb377' }}>
-          <h1 className="text-center text-white p-5 text-5xl">El Catálogo Crítico</h1>
-          <p className="text-center p-10 mb-0">
+          <h1 className="text-center text-white p-4 text-5xl">StarReview: El Catálogo Crítico</h1>
+          <p className="text-center p-2 mb-0 text-2xl">
             "Opiniones para los Amantes de los Libros"
           </p>
         </div>
