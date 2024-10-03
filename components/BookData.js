@@ -124,48 +124,48 @@ const books = [
   
   {
     id: 'book13',
-    title: 'Título del Libro 3',
-    imageUrl: 'URL_DE_LA_IMAGEN_DEL_LIBRO_3',
-    date: 'fecha',
-    synopsis: 'Esta es la sinopsis del Libro 3.',
+    title: 'Los juegos del hambre',
+    imageUrl: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSK0UxkvgHCllPNg7S8fX4mZJyBQQxmO7KZCg&s',
+    date: '2008',
+    synopsis: 'Un pasado de guerras ha dejado los 12 distritos que dividen Panem bajo el poder tiránico del Capitolio. Sin libertad y en la pobreza, nadie puede salir de los límites de su distrito. Sólo una chica de 16 años, Katniss Everdeen, osa desafiar las normas para conseguir comida.',
     review: '',
-    author: 'Autor del Libro 3',
-    genres: '' // Puedes dejarlo vacío o agregar géneros
+    author: 'Suzanne Collins',
+    genres: 'Novela, Ciencia Ficción' // Puedes dejarlo vacío o agregar géneros
   },
   {
     id: 'book14',
-    title: 'Título del Libro 3',
-    imageUrl: 'URL_DE_LA_IMAGEN_DEL_LIBRO_3',
-    date: 'fecha',
-    synopsis: 'Esta es la sinopsis del Libro 3.',
+    title: 'The Maze Runner',
+    imageUrl: 'https://images.cdn1.buscalibre.com/fit-in/360x360/99/5f/995f481a1b24655893d3160f05b43903.jpg',
+    date: '2009',
+    synopsis: 'Thomas es un adolescente cuya memoria fue borrada y que ha sido encerrado junto a otros chicos de su edad en un laberinto plagado de monstruos y misterios. Para sobrevivir, tendrá que adaptarse a las normas y a los demás habitantes del laberinto.',
     review: '',
-    author: 'Autor del Libro 3',
-    genres: '' // Puedes dejarlo vacío o agregar géneros
+    author: 'James Dashner',
+    genres: 'Acción, Ciencia Ficción, Aventura, Supenso' // Puedes dejarlo vacío o agregar géneros
   },
   {
     id: 'book15',
-    title: 'Título del Libro 3',
-    imageUrl: 'URL_DE_LA_IMAGEN_DEL_LIBRO_3',
-    date: 'fecha',
-    synopsis: 'Esta es la sinopsis del Libro 3.',
+    title: 'La selección',
+    imageUrl: 'https://images.cdn3.buscalibre.com/fit-in/360x360/12/9d/129d8a4f502ecd81b1b8a7e67526bdc9.jpg',
+    date: '2012',
+    synopsis: 'Para treinta y cinco chicas, La Selección es una oportunidad que sólo se presenta una vez en la vida. La oportunidad de escapar de la vida que les ha tocado por nacer en una determinada familia. La oportunidad de que las trasladen a un mundo de trajes preciosos y joyas que no tienen precio. La oportunidad de vivir en un palacio y de competir por el corazón del guapísimo príncipe Maxon. Sin embargo, para America Singer, ser seleccionada es una pesadilla porque significa alejarse de su amor secreto, Aspen, quien pertenece a una casta inferior a la de ella; y también abandonar su hogar para pelear por una corona que no desea y vivir en un palacio que está bajo la constante amenaza de ataques violentos por parte de los rebeldes.',
     review: '',
-    author: 'Autor del Libro 3',
-    genres: '' // Puedes dejarlo vacío o agregar géneros
+    author: 'Kiera Cass',
+    genres: 'Novela, Ficción, Romance, Realeza' // Puedes dejarlo vacío o agregar géneros
   },
   {
     id: 'book16',
-    title: 'Título del Libro 3',
-    imageUrl: 'URL_DE_LA_IMAGEN_DEL_LIBRO_3',
-    date: 'fecha',
-    synopsis: 'Esta es la sinopsis del Libro 3.',
+    title: 'La Fundamentacion de la metafisica de las costumbres',
+    imageUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/4/40/Fundamentación_de_la_metafísica_de_las_costumbres_%281921%29.pdf/page1-443px-Fundamentación_de_la_metafísica_de_las_costumbres_%281921%29.pdf.jpg',
+    date: '1785',
+    synopsis: 'La Fundamentación de la metafísica de las costumbres es una de las obras más importantes de la historia de la ética y ejemplo paradigmático del pensamiento ilustrado. En estas páginas Kant lleva a cabo el aislamiento crítico, la elucidación y la justificación del principio supremo de la moralidad.',
     review: '',
-    author: 'Autor del Libro 3',
-    genres: '' // Puedes dejarlo vacío o agregar géneros
+    author: 'Immanuel Kant',
+    genres: 'Ética' // Puedes dejarlo vacío o agregar géneros
   },
   {
     id: 'book17',
     title: 'Título del Libro 3',
-    imageUrl: 'URL_DE_LA_IMAGEN_DEL_LIBRO_3',
+    imageUrl: 'url',
     date: 'fecha',
     synopsis: 'Esta es la sinopsis del Libro 3.',
     review: '',
