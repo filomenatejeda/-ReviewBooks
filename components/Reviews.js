@@ -60,6 +60,24 @@ const Reviews = ({ bookId }) => {
         { reviewer: 'Cecilia', comment: 'Un librazo apto para todo público, que les va a volar la mente y tiene una adaptación en camino, así que yo que ustedes lo leo desde ya. Además, estoy ansiosa por leer los siguientes libros de esta serie!', rating: 5 },{ reviewer: 'Emi', comment: 'Me gustó, fue bastante ágil su lectura. Sentía la tensión cuando tenía que sentirla y cuando me ponía a leer avanzaba super rápido. Pero la historia no me convenció, el por qué Pippa empezó a hacer su proyecto y que después fuera encontrando tantas cosas que la llevaban por buen camino así con demasiada facilidad me causó ruido.', rating: 3 },{ reviewer: 'Ángela', comment: 'No creo que sea un libro terrible, solo que es bastante adolescente e incluso infantil. Pienso que podría ser una buena forma de iniciar a alguien en la lectura o en los thrillers, pero dudo que estimule demasiado a lectores asiduos.', rating: 2 },
       ],
     },
+    'book4': {
+      averageRating: 4.7,
+      reviews: [
+        { reviewer: 'Ana', comment: 'El primer libro de una de mis sagas favoritas, estoy enamorada de Jace creo que es mi primer crush de los libros jaj', rating: 5 },{ reviewer: 'Naomi', comment: 'Al fin conocí el mundo de Cassandra Clare✨aún sigo pensando, ¿cómo fue que me demoré tanto en empezar a leer esta saga?. A pesar que solo he leído el primero me gustó. El libro lo sentí por partes un poco lento pero entiendo, ya que nos introduce personajes y todo lo relacionado al Mundo de la Sombras.', rating: 4 },{ reviewer: 'María', comment: 'Este libro no me dejó un buen sabor de boca. Básicamente, no me dejó ningún sabor de boca. O si me dejó un sabor, fue como el sabor del agua. No existía.', rating: 3 },
+      ],
+    },
+    'book5': {
+      averageRating: 4.29,
+      reviews: [
+        { reviewer: 'Luisa', comment: 'Este libro se convirtió en una experiencia fascinante para mí. Aunque al principio de la historia me resultaron irritantes algunas actitudes y comportamientos de Elizabeth, no puedo evitar destacar lo maravillosa que es como hermana; ¡ojalá todos tuviéramos una hermana como Lizzie!', rating: 5 },{ reviewer: 'Matthew', comment: 'Bueno, está bien. Básicamente, es un estudio de personajes de la Inglaterra del siglo XIX, la sociedad, el noviazgo, etc. No ocurre nada que resulte alucinante o fascinante. De hecho, no ocurre gran cosa.', rating: 3 },{ reviewer: 'Lisa', comment: 'Las escenas saltan de una escena a otra tan rápido que me marea y no puedo conectar con ninguno de los personajes. Elizabeth pasa la mayor parte de la novela sentada quejándose del Sr. Darcy y el Sr. Bingley sin hacer absolutamente nada para mejorar su situación. Al menos Jay Gatsby hizo algo con su amor...', rating: 1 },
+      ],
+    },
+    'book6': {
+      averageRating: 4.16,
+      reviews: [
+        { reviewer: 'Antonia', comment: 'No quería que se acabara.Sigo estando triste y siempre lo estaré porque Jo y Laurie no terminan juntos.También estoy enojada por haber visto la adaptación antes de leer el libro porque me creé otras expectativas.Amy merece mayor reconocimiento porque tiene un crecimiento impresionante. Igual siento que Florence Pugh le hizo justicia. (Greta Gerwig, en verdad).TE AMO JO.', rating: 5 },{ reviewer: 'Vale', comment: 'Me gusto mucho más de lo que esperaba. Jo obvio es mi favorita ❤La segunda parte me está costando un poco más, pero igual me esta gustando.', rating: 4 },{ reviewer: 'Cami', comment: 'Veamos, entiendo que se escribió en 1868, de verdad que lo entiendo. Soy muy consciente de la época y del rol de la mujer en ese momento. Pero Jane Eyre es previo a esos años y es algo por completo diferente. No los voy a comparar porque no es justo, son historias distintas. Solo quería ejemplificar que aun dentro del rol de la mujer en ese momento, se podía hacer algo que no fuera tan moralista.', rating: 3 },
+      ],
+    },
     // Puedes añadir más reseñas y promedios para otros libros
   };
 
