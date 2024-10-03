@@ -4,12 +4,16 @@ import Book from './Book.js';
 import Favorite from './Favorite.js'; // Importa el componente Favorite
 
 const genresList = [
-  'Fiction',
-  'Science Fiction',
-  'Fantasy',
+  'Ficción',
+  'Ciencia Ficción',
+  'Fantasía',
   'Romance',
   'Horror',
-  'Adventure',
+  'Adventura',
+  'Política',
+  'Clásica',
+  'Poesía',
+  'Literatura',
 ];
 
 export default function EjemploFilter({ children }) {
@@ -117,3 +121,4 @@ export default function EjemploFilter({ children }) {
     </div>
   );
 }
+
