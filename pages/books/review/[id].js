@@ -36,18 +36,23 @@ const BookReview = () => {
   if (!book) return <p>Cargando...</p>; 
 
   return (
+    
     <div className="p-0 bg-gray-200 min-h-screen"> {/* Fondo gris y mínimo alto para ocupar toda la pantalla */}
       {/* Breadcrumb de navegación para la localización dentro de la aplicación */}
-      <div className="mb-4 p-4 bg-gray-800 text-white px-0">
-        <Link href={`/`}>
-          <a className="text-blue-400 hover:underline ml-4">Inicio</a> {/* Enlace a la página principal */}
-        </Link>
-        <span> &gt; </span> {/* Flecha de separación */}
-        <Link href={`/books/synopsis/${id}`}>
-          <a className="text-blue-400 hover:underline">{book.title}</a> {/* Enlace al título del libro */}
-        </Link>
-        <span> &gt; Escribir Reseña</span> {/* Flecha indicando la navegación actual */}
-      </div>
+      <div className="mb-4 p-4 bg-gray-800 text-white flex justify-between items-center">
+  <div className="flex items-center">
+    <Link href={`/`}>
+      <a className="text-blue-400 hover:underline ml-2">Inicio</a> {/* Enlace a la página principal */}
+    </Link>
+    <span className="mx-2"> &gt; </span> {/* Flecha de separación */}
+    <Link href={`/books/synopsis/${id}`}>
+      <a className="text-blue-400 hover:underline">{book.title}</a> {/* Enlace al título del libro */}
+    </Link>
+    <span className="mx-2"> &gt; Escribir Reseña</span> {/* Flecha indicando la navegación actual */}
+  </div>
+  <h2 className="text-white text-2xl text-right">StarReview</h2>
+</div>
+
       <title>Escribir Reseña</title>
       <div className="flex flex-col md:flex-row items-center mb-4 ml-4"> {/* Contenedor para el diseño de imagen y texto */}
         {book.imageUrl && ( // Agrega la imagen del libro si está disponible

@@ -51,16 +51,18 @@ const BookSynopsis = () => {
 
   return (
     <div className="px-0 bg-gray-100">
-      {/* Barra de navegación */}
-      <nav className="mb-4 p-4 bg-gray-800 text-white">
-        <Link href={`/`} className="text-blue-400 hover:underline">
-          Inicio
-        </Link>
-        <span> &gt; Sinopsis</span>
-      </nav>
-
+  {/* Barra de navegación */}
+  <nav className="mb-4 p-4 bg-gray-800 text-white flex justify-between items-center">
+    <div className="flex items-center">
+      <Link href={`/`} className="text-blue-400 hover:underline">
+        Inicio
+      </Link>
+      <span className="mx-2"> &gt; Sinopsis</span>
+    </div>
+    <h2 className="text-white text-2xl">StarReview</h2>
+  </nav>
       {/* Título principal de la página */}
-      <h1 className="text-3xl font-bold text-center mb-6">Sinopsis</h1>
+      <h1 className="text-3xl font-bold text-center mb-3">Sinopsis</h1>
 
       {/* Contenido de la sinopsis */}
       <div className="flex ml-8 flex-col md:flex-row items-start">
