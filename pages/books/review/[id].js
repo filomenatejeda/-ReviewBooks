@@ -76,7 +76,7 @@ const BookReview = () => {
     value={review}
     onChange={(e) => setReview(e.target.value)} // Actualiza el estado de la reseña al escribir
     placeholder="Escribe tu reseña aquí..."
-    className="border border-gray-300 rounded p-2 w-full h-96 md:w-11/12" // Ajuste del tamaño del textarea y centrado
+    className="border border-gray-300 rounded p-2 w-full h-72 md:w-11/12" // Ajuste del tamaño del textarea y centrado
   />
   <div className="flex justify-center">
     <button className="mt-4 bg-blue-500 text-white py-2 px-2 rounded mb-4"> {/* Botón centrado */}
