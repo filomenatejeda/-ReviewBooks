@@ -164,54 +164,54 @@ const books = [
   },
   {
     id: 'book17',
-    title: 'Título del Libro 3',
-    imageUrl: 'url',
-    date: 'fecha',
-    synopsis: 'Esta es la sinopsis del Libro 3.',
-    review: '',
-    author: 'Autor del Libro 3',
-    genres: '' // Puedes dejarlo vacío o agregar géneros
+    title: 'Drácula',
+    imageUrl: 'https://cdn.prod.website-files.com/6034d7d1f3e0f52c50b2adee/62545414f3a6fb9f5d120730_6034d7d1f3e0f55ec6b2b1da_Dracula-bram-stocker-editorial-alma.jpeg',
+    date: 'Año: 1897',
+    synopsis: 'El joven abogado Jonathan Harker viaja a Transilvania para encontrarse con un cliente, el conde Drácula, quien pronto revela ser un vampiro. A medida que Drácula se traslada a Inglaterra, un grupo de personas liderado por el Dr. Van Helsing se une para detener al monstruo.',
+    review: '', // Campo para la reseña
+    author: 'Bram Stoker',
+    genres: 'Horror, Ficción, Literatura, Gótico', // Géneros separados por comas
   },
   {
     id: 'book18',
-    title: 'Título del Libro 3',
-    imageUrl: 'URL_DE_LA_IMAGEN_DEL_LIBRO_3',
-    date: 'fecha',
-    synopsis: 'Esta es la sinopsis del Libro 3.',
-    review: '',
-    author: 'Autor del Libro 3',
-    genres: '' // Puedes dejarlo vacío o agregar géneros
-  },
+    title: 'Moby Dick',
+    imageUrl: 'https://images.cdn1.buscalibre.com/fit-in/360x360/b5/89/b589be02f650868192cc4bc0c876ea31.jpg',
+    date: 'Año: 1851',
+    synopsis: 'La narración sigue al marinero Ishmael mientras se embarca en el Pequod, un barco ballenero capitaneado por el obsesivo Ahab. Ahab está decidido a vengarse de Moby Dick, una enorme ballena blanca que le ha mutilado en el pasado.',
+    review: '', // Campo para la reseña
+    author: 'Herman Melville',
+    genres: 'Aventura, Ficción, Literatura', // Géneros separados por comas
+  },  
   {
     id: 'book19',
-    title: 'Título del Libro 3',
-    imageUrl: 'URL_DE_LA_IMAGEN_DEL_LIBRO_3',
-    date: 'fecha',
-    synopsis: 'Esta es la sinopsis del Libro 3.',
-    review: '',
-    author: 'Autor del Libro 3',
-    genres: '' // Puedes dejarlo vacío o agregar géneros
-  },
+    title: 'Fahrenheit 451',
+    imageUrl: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSthXfKlymuR3xTtIU5KpoFCLCkr8vOnKHXig&s',
+    date: 'Año: 1953',
+    synopsis: 'En un futuro distópico donde los libros están prohibidos y los bomberos queman cualquier libro que encuentren, el protagonista Guy Montag, un bombero, comienza a cuestionar el sistema en el que vive y decide rebelarse contra la censura.',
+    review: '', // Campo para la reseña
+    author: 'Ray Bradbury',
+    genres: 'Distopía, Ciencia ficción, Ficción, Literatura', // Géneros separados por comas
+  },  
   {
     id: 'book20',
-    title: 'Título del Libro 3',
-    imageUrl: 'URL_DE_LA_IMAGEN_DEL_LIBRO_3',
-    date: 'fecha',
-    synopsis: 'Esta es la sinopsis del Libro 3.',
-    review: '',
-    author: 'Autor del Libro 3',
-    genres: '' // Puedes dejarlo vacío o agregar géneros
+    title: 'El retrato de Dorian Gray',
+    imageUrl: 'https://images.cdn2.buscalibre.com/fit-in/360x360/91/18/9118645bef1e527a3e1f14e7187ac89e.jpg',
+    date: 'Año: 1890',
+    synopsis: 'Dorian Gray es un joven cuya belleza se captura en un retrato. A medida que pasa el tiempo, Dorian no envejece, pero su retrato empieza a mostrar signos de decadencia física y moral, revelando el costo de sus pecados.',
+    review: '', // Campo para la reseña
+    author: 'Oscar Wilde',
+    genres: 'Ficción, Literatura, Fantasía, Gótico', // Géneros separados por comas
   },
   {
     id: 'book21',
-    title: 'Título del Libro 3',
-    imageUrl: 'URL_DE_LA_IMAGEN_DEL_LIBRO_3',
-    date: 'fecha',
-    synopsis: 'Esta es la sinopsis del Libro 3.',
-    review: '',
-    author: 'Autor del Libro 3',
-    genres: '' // Puedes dejarlo vacío o agregar géneros
-  },
+    title: 'Cien años de soledad',
+    imageUrl: 'https://images.cdn2.buscalibre.com/fit-in/360x360/38/12/3812f54c9c10992f538ead2c95d775ed.jpg',
+    date: 'Año: 1967',
+    synopsis: 'La historia sigue a la familia Buendía a lo largo de siete generaciones en el mítico pueblo de Macondo, mientras explora temas como la soledad, el tiempo, el destino y la repetición cíclica de la historia.',
+    review: '', // Campo para la reseña
+    author: 'Gabriel García Márquez',
+    genres: 'Realismo mágico, Ficción, Literatura', // Géneros separados por comas
+  }
 ];
 
 export default books;
