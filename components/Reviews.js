@@ -105,10 +105,69 @@ const Reviews = ({ bookId }) => {
   'book11': {
     averageRating: 4.4,
     reviews: [
-      { reviewer: 'Valentina', comment: 'George Orwell nos advirtió que las estadísticas burlarían la humanidad de la clase baja y no lo escuchamos. Nos merecemos nuestro destino, pues, ya este hombre me dejó con el alma más fatalista de lo usual.', rating: 5 },{ reviewer: 'Emily', comment: 'Sé que este es un clásico muy querido y definitivamente disfruté algunas partes... pero algunas veces me aburrí un poco :S', rating: 3 },{ reviewer: 'Joelle', comment: 'Quítenme este libro de encima. ¿Por qué es una lectura obligatoria? Voy a abandonar.', rating: 1 },
+      { reviewer: 'Melissa', comment: 'El canto fue definitivamente exagerado para mi gusto, ¡pero Andy Serkis hizo un trabajo maravilloso narrando la historia!', rating: 5 },{ reviewer: 'Ángela', comment: 'Quedé totalmente encantada con la ambientación, los personajes, la trama, la acción y cómo al ser una historia, mundo y trama complejos Tolkien logra dosificar la información y sumergirte de lleno sin ser pesado.', rating: 5 },{ reviewer: 'Tim', comment: 'No entiendo el fenómeno que rodea a esta serie. La encuentro lenta, larga y aburrida. No es para mí.', rating: 1 },
     ],
   },
-    // Puedes añadir más reseñas y promedios para otros libros
+  'book12': {
+    averageRating: 4.0,
+    reviews: [
+      { reviewer: 'Kewpie', comment: 'Este libro enseñará a los estudiantes de primaria que están empezando a aprender algo nuevo sobre los agujeros negros y a los adultos sobre la mente lúdica y el sentido del humor de Stephen Hawking.', rating: 5 },{ reviewer: 'Diamon', comment: 'Esta es una historia interesante. George debe salvar a alguien que ha caído en un agujero negro. Muestra sus aventuras para salvarlo.', rating: 4 },{ reviewer: 'Aaron', comment: 'La historia no era muy buena. Los recuadros de información que estaban repartidos por todo el libro eran interesantes e informativos y, en general, relacionados con el tema, pero me resultaron un poco distractores. Sin embargo, creo que tuvo éxito porque la información estaba entrelazada con la historia..', rating: 2 },
+    ],
+  },
+  'book13': {
+    averageRating: 4.3,
+    reviews: [
+      { reviewer: 'Leo', comment: 'Me ha sorprendido gratamente esta novela. Tenía mis prejuicios y por eso he tardado en leerla. Me equivoqué. No volveré a juzgar un libro sin haberlo leído antes. Un lector dijo que para poder disfrutarla no hay que leerla como un adulto y es así. Seguiré con la trilogía :)', rating: 5 },{ reviewer: 'Nicola', comment: 'Sigue siendo la cumbre de las novelas distópicas para jóvenes. Me gustan los elementos de acción y suspenso de esta novela, pero me costó conectar con Katniss; parecía muy distante y sin emociones, a pesar de la narración en primera persona.', rating: 3 },{ reviewer: 'London', comment: 'Tuve que resoplarme y jadear para leer este libro. No hay nada admirable en ninguno de los personajes. El personaje principal es una contradicción andante. El libro empieza bastante bien, pero al final es como una Mary Sue.', rating: 1 },
+    ],
+  },
+  'book14': {
+    averageRating: 4.0,
+    reviews: [
+      { reviewer: 'Victoria', comment: 'Muy bueno! Tal vez lo habría hecho más largo con más detalles y eventos dentro del laberinto. Es tan atrapante que se lee rápido y termina resultando corto!', rating: 5 },{ reviewer: 'Monica', comment: 'Un libro con una historia confusa, extraña y un tanto a medias, nos introduce a un mundo sin saber nada al igual que sus personajes, cada paso es un mar de dudas y con mucha acción, entramos a esta gran aventura en la que sobreviven o mueren, leeanlo no se lo pueden perder.', rating: 3 },{ reviewer: 'Katherine', comment: 'Este es uno de los libros peor escritos que he leído. La premisa es intrigante, pero el resultado no vale la pena leer más de 300 páginas de descripciones incompetentes, caracterizaciones débiles y una trama ilógica.', rating: 1 },
+    ],
+  },
+  'book15': {
+    averageRating: 4.0,
+    reviews: [
+      { reviewer: 'María', comment: 'Segunda vez que lo leo y me sigue enamorando. Este libro (o saga, mejor dicho), es genial. Te engancha un montón, y la historia es preciosa. Si no lo habéis leído, no sé a qué esperáis!!!! Jajaja.', rating: 5 },{ reviewer: 'Carlos', comment: 'Es gracioso, porque la primera vez que lo leí le di cinco estrellas y ahora mi opinión ha cambiado bastante. Creo que he aprendido a ser más crítico y objetivo con los libros.', rating: 3 },{ reviewer: 'Aileen', comment: 'Un momento de silencio por el libro que acabo de enterrar en mi jardín.', rating: 1 },
+    ],
+  },
+  'book16': {
+    averageRating: 3.8,
+    reviews: [
+      { reviewer: 'Nikos', comment: 'Me atrevería a decir (aunque quizá de forma arbitraria) que Kant es el Aristóteles de la filosofía occidental moderna. Libro muy exigente, aunque el más accesible para lectores no especializados.', rating: 5 },{ reviewer: 'Cristopher', comment: 'Me gusta Kant, pero la deontología tiene algunos problemas bastante obvios. Eso no quiere decir que no sea un buen libro. Creo que debería ser una lectura obligatoria para los seres humanos en general. El problema es que la ética no es fácil. Me quedo corto. Si la crítica es un trago de café expreso, los prolegómenos son ligeros y dulces.', rating: 3 },{ reviewer: 'Sadako', comment: 'No le di una calificación porque pensé que era una mala lectura. Para mí, Kant es el primer punto de demarcación que puedo reconocer tangiblemente como el inicio de la decadencia de la civilización occidental. Siéntete libre de estar en desacuerdo. Creo firmemente que menos personas deberían leer estas tonterías.', rating: 1 },
+    ],
+  },
+  'book17': {
+    averageRating: 4.0,
+    reviews: [
+      { reviewer: 'Jessica', comment: 'Me encanta esta historia y me encanta cómo este elenco de voces le dio vida. Alan Cumming estuvo extraordinario como el Dr. Seward y quien hizo el papel de Mina tenía una voz encantadora. Pero, por supuesto: Tim Curry. Genial.', rating: 5 },{ reviewer: 'Craz', comment: 'Logré terminarlo :) Es la segunda vez que lo estudio, pero es la primera vez que lo leo con éxito. Esta vez lo disfruté más, principalmente porque leí el último cuarto del libro, que fue lo más disfrutable en mi opinión.', rating: 3 },{ reviewer: 'Stefania', comment: 'La verdad es que no me ha gustado nada :( tenía mucha ilusión por leerlo quitando la primera parte que me encantó el resto se me ha hecho repetitivo y con personajes planos. Quizá lo retome algún día pero de momento me apetece cambiar de lectura.', rating: 1 },
+    ],
+  },
+  'book18': {
+    averageRating: 3.5,
+    reviews: [
+      { reviewer: 'Al', comment: '¡La mejor línea de apertura de la historia! Y bueno, uno siempre puede saltarse algunas de las páginas de ballenas...', rating: 5 },{ reviewer: 'Calista', comment: 'Otra lectura obligatoria en inglés. Entiendo la historia, pero creo que es más una historia para chicos. No es de mi agrado.', rating: 3 },{ reviewer: 'Cassandra', comment: 'Creo que Moby Dick fue mi gran ballena blanca. Literalmente me persiguió durante años y casi podría haberme ahorcado con Ahab al final. El capítulo sobre la cuerda... ¿en serio? ¿En serio?', rating: 1 },
+    ],
+  },
+  'book19': {
+    averageRating: 3.9,
+    reviews: [
+      { reviewer: 'Ángela', comment: 'Al fin leo una de las tres distopías clásicas y me llevo un muy buen sabor de boca, una historia que se lee rápido, engancha desde sus primeras páginas, está llena de acción, y que resalta el enorme valor de los libros, la lectura nos hace libres.', rating: 4 },{ reviewer: 'Mia', comment: 'El mensaje me pareció interesante e importante. Sin embargo, debo admitir que la prosa del autor no me permitió conectar con ningún personaje ni sumergirme totalmente en la historia. Aún así, creo que es un increíble libro que todo lector debería leer, y tal vez más aún, los no lectores.', rating: 3 },{ reviewer: 'Lubitsch', comment: 'Este es uno de los libros más sobrevalorados que he leído. Le daría un pase libre si simplemente estuviera sobrevalorado (un pequeño libro seguro exagerado), pero resulta que también es extremadamente estúpido y problemático.', rating: 1 },
+    ],
+  },
+  'book20': {
+    averageRating: 4.1,
+    reviews: [
+      { reviewer: 'Ángela', comment: 'Una maravilla de libro que va directo a mis mejores lecturas del año. Y es que este libro tiene todo para encantarme, una excelente atmósfera y ambientación, un ritmo trepidante, una prosa hermosa y personajes moralmente grises. El retrato de Dorian Gray es un clásico imperdible que recomiendo a todos.', rating: 5 },{ reviewer: 'Warda', comment: 'El final fue triste, pero necesario. La escritura es impresionante, el mensaje general es atemporal y muy bien estructurado. Los personajes son deplorables, pero complejos. Sin duda, es un final que se quedará conmigo por un tiempo.', rating: 3 },{ reviewer: 'Lucie', comment: 'Estaba segura de que me gustaría este libro, pero me resultó muy aburrido, largo y poco interesante. ¡Los largos pasajes descriptivos fueron mi perdición! Leí un párrafo y de inmediato olvidé de qué se trataba, lo cual fue bastante frustrante. No es para mí.', rating: 1 },
+    ],
+  },
+  'book21': {
+    averageRating: 4.1,
+    reviews: [
+      { reviewer: 'Valentina', comment: 'Una maravilla de libro. La prosa de Márquez es una delicia. Es de esos libros que hay que leer en la vida.', rating: 5 },{ reviewer: 'Jonathan', comment: 'Era demasiado largo y perdí el hilo conductor en las primeras cien páginas, si es que lo había. Sin embargo, el lenguaje era genial y la ciudad era mágica a su manera.', rating: 3 },{ reviewer: 'Aria', comment: 'Basura. El producto es basura y, por lo tanto, ahí es donde he puesto este libro. Historia real.', rating: 1 },
+    ],
+  },
   };
 
   // Obtén las reseñas y el promedio del libro actual
