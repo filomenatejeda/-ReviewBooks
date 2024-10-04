@@ -110,8 +110,8 @@ const BookSynopsis = () => {
               </span>
             )).reduce((prev, curr) => [prev, ', ', curr])}
           </p>
-          <div className="mt-2 mr-10 flex justify-end">
-            <div className="mb-10 w-[1000px] min-h-[100px] p-3 rounded bg-white shadow-md">
+          <div className="mt-4 mr-10 flex justify-end">
+            <div className="mb-8 w-[1000px] min-h-[100px] p-3 rounded bg-white shadow-md">
               <h3 className="text-lg font-semibold">Reseña:</h3>
               <p className="mt-2">{book.review || "No hay reseña disponible."}</p>
             </div>

@@ -54,7 +54,7 @@ const BookReview = () => {
 </div>
 
       <title>Escribir Reseña</title>
-      <div className="flex flex-col md:flex-row items-center mb-4 ml-4"> {/* Contenedor para el diseño de imagen y texto */}
+      <div className="flex flex-col md:flex-row items-center mb-4 ml-16 "> {/* Contenedor para el diseño de imagen y texto */}
         {book.imageUrl && ( // Agrega la imagen del libro si está disponible
           <img 
             src={book.imageUrl} 
@@ -67,21 +67,23 @@ const BookReview = () => {
           <h2 className="text-xl font-medium text-gray-700">{book.author}</h2> {/* Autor del libro */}
         </div>
       </div>
-      <div className='ml-4'>
+      <div className='ml-16'>
       <StarRating bookId={book.id} /> {/* Componente que permite calificar el libro */}
       </div>
       {/* Formulario para escribir la reseña */}
-      <form onSubmit={handleReviewSubmit} className="mt-4 ml-4">
-        <textarea
-          value={review}
-          onChange={(e) => setReview(e.target.value)} // Actualiza el estado de la reseña al escribir
-          placeholder="Escribe tu reseña aquí..."
-          className="border border-gray-300 rounded p-2 mr-10 w-full h-80" // Estilo para el textarea
-        />
-        <button type="submit" className="mt-2 mb-10 bg-blue-500 text-white p-2 rounded">
-          Enviar Reseña
-        </button>
-      </form>
+      <form onSubmit={handleReviewSubmit} className="mt-4 flex flex-col items-center">
+  <textarea
+    value={review}
+    onChange={(e) => setReview(e.target.value)} // Actualiza el estado de la reseña al escribir
+    placeholder="Escribe tu reseña aquí..."
+    className="border border-gray-300 rounded p-2 w-full h-96 md:w-11/12" // Ajuste del tamaño del textarea y centrado
+  />
+  <div className="flex justify-center">
+    <button className="mt-4 bg-blue-500 text-white py-2 px-2 rounded mb-4"> {/* Botón centrado */}
+      Enviar Reseña
+    </button>
+  </div>
+</form>
       <Footer className="w-full m-0 p-0 px-0" /> {/* Pie de página sin márgenes */}
     </div>
   );
