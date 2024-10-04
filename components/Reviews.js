@@ -78,6 +78,36 @@ const Reviews = ({ bookId }) => {
         { reviewer: 'Antonia', comment: 'No quería que se acabara.Sigo estando triste y siempre lo estaré porque Jo y Laurie no terminan juntos.También estoy enojada por haber visto la adaptación antes de leer el libro porque me creé otras expectativas.Amy merece mayor reconocimiento porque tiene un crecimiento impresionante. Igual siento que Florence Pugh le hizo justicia. (Greta Gerwig, en verdad).TE AMO JO.', rating: 5 },{ reviewer: 'Vale', comment: 'Me gusto mucho más de lo que esperaba. Jo obvio es mi favorita ❤La segunda parte me está costando un poco más, pero igual me esta gustando.', rating: 4 },{ reviewer: 'Cami', comment: 'Veamos, entiendo que se escribió en 1868, de verdad que lo entiendo. Soy muy consciente de la época y del rol de la mujer en ese momento. Pero Jane Eyre es previo a esos años y es algo por completo diferente. No los voy a comparar porque no es justo, son historias distintas. Solo quería ejemplificar que aun dentro del rol de la mujer en ese momento, se podía hacer algo que no fuera tan moralista.', rating: 3 },
       ],
     },
+    'book7': {
+      averageRating: 4.3,
+      reviews: [
+        { reviewer: 'Rajat', comment: 'En mi opinión, el objetivo de esta reseña es muy claro: convencerte a TI de que leas este libro. ¡Sí, a ti! No pierdas más el tiempo. Hazte con una copia.', rating: 5 },{ reviewer: 'Katie', comment: 'Una novela realmente interesante. Me encantó la construcción del mundo y el mundo en sí, y algunos de los personajes centrales fueron fascinantes. La trama fue un poco confusa a veces, y encontré algunos aspectos un poco discordantes, pero en general fue una lectura buena e interesante.', rating: 3 },{ reviewer: 'Mallory', comment: 'Preferiría leer un manual del propietario de 800 páginas para un automóvil que no tengo.', rating: 1 },
+      ],
+    },
+    'book8': {
+      averageRating: 4.4,
+      reviews: [
+        { reviewer: 'Leo', comment: 'El primer libro del que tenía tan bajas expectativas y me sorprendió tanto que pasó a ser uno de mis favoritos, dejó tan alto el listón que elevó demasiado las expectativas del segundo y ha pasado lo que me temía...Sólo espero que el tercero recupere la MAGIA del primero', rating: 4 },{ reviewer: 'Sofia', comment: 'Jesucristo. Déjame procesar lo que acabo de leer y regresaré. Calificación real 4.5. Por lo que vale, solo necesito procesar todo porque fue... una experiencia.', rating: 4 },{ reviewer: 'Fabiano', comment: 'Me está costando mucho empezar este libro, en gran parte porque odio a Vin como personaje y no me importa nada Elend, aunque aparentemente esos dos son el foco de atención de esta entrega de la serie.', rating: 2 },
+      ],
+    },
+    'book9': {
+      averageRating: 4.5,
+      reviews: [
+        { reviewer: 'Karla', comment: '4.5 esta segunda vez. me encanta demasiado demasiado demasiado este libro. me hace sentir como en casa. no le doy 5 estrellas porque el principio me aburre un poco, pero aún así lo disfruté infinitamente.', rating: 4 },{ reviewer: 'Cindy', comment: 'Este libro estuvo bien. No lo odié ni lo amé de ninguna manera, aunque hacia el final me di cuenta de lo tibia que me sentía con la historia, ya que preferiría leer cualquier otro libro que tuviera a mano. Aprecio el nivel de novedad en la construcción del mundo durante el tiempo en que se publicó por primera vez.', rating: 3 },{ reviewer: 'Voldemort', comment: 'Esto es una vergüenza para todos los de sangre pura. Mi cabeza lucía bastante elegante en la cabeza de ese extraño profesor... Si tan solo hubiera podido prolongar mi estadía. Harry Potter... Esto aún no ha terminado.', rating: 1 },
+      ],
+    },
+    'book10': {
+      averageRating: 4.2,
+      reviews: [
+        { reviewer: 'Valentina', comment: 'George Orwell nos advirtió que las estadísticas burlarían la humanidad de la clase baja y no lo escuchamos. Nos merecemos nuestro destino, pues, ya este hombre me dejó con el alma más fatalista de lo usual.', rating: 5 },{ reviewer: 'Emily', comment: 'Sé que este es un clásico muy querido y definitivamente disfruté algunas partes... pero algunas veces me aburrí un poco :S', rating: 3 },{ reviewer: 'Joelle', comment: 'Quítenme este libro de encima. ¿Por qué es una lectura obligatoria? Voy a abandonar.', rating: 1 },
+      ],
+    },
+  'book11': {
+    averageRating: 4.4,
+    reviews: [
+      { reviewer: 'Valentina', comment: 'George Orwell nos advirtió que las estadísticas burlarían la humanidad de la clase baja y no lo escuchamos. Nos merecemos nuestro destino, pues, ya este hombre me dejó con el alma más fatalista de lo usual.', rating: 5 },{ reviewer: 'Emily', comment: 'Sé que este es un clásico muy querido y definitivamente disfruté algunas partes... pero algunas veces me aburrí un poco :S', rating: 3 },{ reviewer: 'Joelle', comment: 'Quítenme este libro de encima. ¿Por qué es una lectura obligatoria? Voy a abandonar.', rating: 1 },
+    ],
+  },
     // Puedes añadir más reseñas y promedios para otros libros
   };
 
